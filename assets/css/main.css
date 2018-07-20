@@ -1,0 +1,292 @@
+.logo {
+  width: 100%; }
+
+.footer {
+  padding: 1em 0; }
+  .footer p {
+    color: #fff;
+    padding-left: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .footer p {
+        padding-left: 2em;
+        text-align: left; } }
+
+body {
+  background: #16487E; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
+.container-fluid {
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .container-fluid {
+      padding-left: 0; } }
+
+.main {
+  background-color: #fff; }
+  @media (min-width: 768px) {
+    .main {
+      background-color: transparent; } }
+
+.customer-form span.dollar-wrap label.error {
+  position: absolute; }
+
+.main-content {
+  background: #fff;
+  padding: 1em 2em;
+  position: relative; }
+  .main-content h2 {
+    padding: 0 0 1em 4em;
+    color: #16487E;
+    font-size: 1.3em;
+    font-weight: 600; }
+
+@media (max-width: 992px) {
+  .main-content h2 {
+    padding: 0 0 1em; } }
+
+.main-content:after {
+  height: auto;
+  position: static;
+  border-right: 0; }
+  @media (min-width: 768px) {
+    .main-content:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 100%;
+      right: -65px;
+      top: 0;
+      border-radius: 63%;
+      border-right: 125px solid #fff;
+      z-index: -1; } }
+
+.customer-form {
+  padding: 2em 0; }
+  .customer-form label {
+    color: #16487E;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    font-weight: 500; }
+  .customer-form label.error {
+    color: red;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    padding-top: 0.3em; }
+  .customer-form input.error {
+    border: 1px solid red; }
+  .customer-form input.dollar {
+    padding-left: 1.5em; }
+
+.dollar-wrap {
+  position: relative;
+  display: block; }
+
+.dollar-wrap:after {
+  color: #37424a !important;
+  content: "$";
+  font-size: 1em !important;
+  font-weight: 400;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%); }
+
+.actions {
+  padding: 1em 0; }
+  .actions .item-row {
+    margin: 2em 0; }
+
+@keyframes diamond {
+  0% {
+    transform: scale(0); }
+  75% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+.tab {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute; }
+
+.tab.current {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  animation: diamond 1s ease-out; }
+
+button {
+  background: transparent;
+  border: 0; }
+
+button.next {
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  font-size: 1.2em;
+  color: #16487E; }
+
+button.prev {
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  font-size: 1.2em;
+  color: #F07824; }
+
+.next img, .prev img {
+  width: 18px;
+  vertical-align: -4px; }
+
+.prev img {
+  margin-right: 0.2em; }
+
+.next img {
+  margin-left: 0.2em; }
+
+.sidebar {
+  padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .sidebar {
+      justify-content: flex-end; } }
+  .sidebar svg {
+    max-height: 200px;
+    max-width: 180px;
+    width: 100%;
+    margin-bottom: 3em; }
+  .sidebar p {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 1.1em; }
+    @media (min-width: 768px) {
+      .sidebar p {
+        width: 60%;
+        text-align: right; } }
+
+.btn-default {
+  color: #fff;
+  background-color: #16487E;
+  border-color: #ccc;
+  border: 0;
+  outline: none; }
+
+.number-times {
+  padding-top: 1em;
+  margin-bottom: 0.5em; }
+
+img.info {
+  width: 16px;
+  height: 16px;
+  vertical-align: -2px; }
+
+.landing svg .background, .cashFlowRevenue svg .background, .cashFlowIncome svg .background, .managingMoney svg .background, .optimizeCashFlow svg .background, .loanNeeds svg .background, .transactionLevels svg .background {
+  fill: #777; }
+
+#indicatorIcon {
+  fill: white; }
+
+#indicatorIcon > circle {
+  stroke: white; }
+
+#indicatorIcon > g {
+  opacity: 0; }
+
+.landing .landingSubtitle {
+  padding: 2rem 0 0;
+  font-weight: normal;
+  font-size: .8em;
+  color: #ef7622; }
+
+.landing .landing-img-wrapper, .landing .questionPage {
+  top: 8rem; }
+
+.cashFlowIncome svg .st2 {
+  fill: #f58023; }
+
+.cashFlowIncome #manageIcon {
+  opacity: 1.0; }
+
+.optimizeCashFlow svg .st9, .cashFlowRevenue svg .st9 {
+  fill: #f9a232; }
+
+.optimizeCashFlow #optimizeIcon, .cashFlowRevenue #optimizeIcon {
+  opacity: 1.0; }
+
+.managingMoney svg .st5, .transactionLevels svg .st5 {
+  fill: #f07622; }
+
+.managingMoney #simplifyIcon, .transactionLevels #simplifyIcon {
+  opacity: 1.0; }
+
+.loanNeeds svg .st7 {
+  fill: #1282c5; }
+
+.loanNeeds #growthIcon {
+  opacity: 1.0; }
+
+.common #manageIcon, .yourTeam #manageIcon, .highLevel #manageIcon, .behavior #manageIcon, .retirementNeeds #manageIcon {
+  transform: translate(5px, -27.5px) scale(0.4);
+  opacity: 1.0; }
+
+.common #simplifyIcon, .yourTeam #simplifyIcon, .highLevel #simplifyIcon, .behavior #simplifyIcon, .retirementNeeds #simplifyIcon {
+  opacity: 1.0;
+  transform: translate(5px, 5px) scale(0.4); }
+
+.common #growthIcon, .yourTeam #growthIcon, .highLevel #growthIcon, .behavior #growthIcon, .retirementNeeds #growthIcon {
+  opacity: 1.0;
+  transform: translate(-31px, 6px) scale(0.4); }
+
+.common #optimizeIcon, .yourTeam #optimizeIcon, .highLevel #optimizeIcon, .behavior #optimizeIcon, .retirementNeeds #optimizeIcon {
+  opacity: 1.0;
+  transform: translate(-30px, -28px) scale(0.3); }
+
+.st2 {
+  fill: #ffecaf; }
+
+.st3 {
+  fill: #fff0c8; }
+
+.st5 {
+  fill: #f07622; }
+
+.st6 {
+  fill: #fa9654; }
+
+.st7 {
+  fill: #1282c5; }
+
+.st8 {
+  fill: #6199d1; }
+
+.st9 {
+  fill: #f9a232; }
+
+.st10 {
+  fill: #fcb767; }
+
+tspan {
+  font-size: 12px;
+  fill: #555;
+  font-family: 'museo-sans-condensed';
+  font-weight: 700; }
+
+#inner_circle {
+  fill: url(#inner_circle_gradient); }
+
+#text-path {
+  stroke: none;
+  fill: none; }

@@ -1,0 +1,15 @@
+{
+  "name": "us-bank-sample",
+  "version": "1.0.0",
+  "description": "Sample Code for US Bank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Garvin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
